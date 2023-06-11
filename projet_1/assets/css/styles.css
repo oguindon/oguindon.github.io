@@ -1,7 +1,7 @@
 body {
     background-color: black;
     font-family: verdana;
-    
+
 }
 
 h1 {
@@ -26,6 +26,13 @@ font-size: 20px;
 }
 
 .floatleft {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     float:left; 
     width: 50%;
     background-color: #ff0000;
@@ -33,6 +40,13 @@ font-size: 20px;
 }
 
 .floatright {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     float: right;
     width: 50%;
     background-color: #00ff00;
