@@ -57,6 +57,28 @@ font-size: 20px;
 .titlecontainer {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
     height: 100px;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 25%;
+    height: 800px;
+    font-family: verdana;
 }

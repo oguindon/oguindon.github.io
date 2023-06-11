@@ -34,18 +34,34 @@
         <div class="center">
             <form>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">First Name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="firstName" class="form-label">Prénom</label>
+                    <input type="text" class="form-control" id="firstName">
                 </div>
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <label for="lastName" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="lastName">
                 </div>
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                <label for="inputEmail" class="form-label">Adresse courriel</label>
+                <input type="email" class="form-control" id="inputEmail">
                 </div>
+                <label for="selection-service">Chosir un service:</label>
+                <select name="services" id="selection-service">
+                    <option value="nouveau">Nouveau Tattouage</option>
+                    <option value="couvrir">Couvrir un tatouage</option>
+                    <option value="enlever">Enlever un tatouage</option>
+                    <option value="percage">Perçage</option>
+                </select>
+
+                <label for="selection-expert">Chosir un service:</label>
+                <select name="experts" id="selection-expert">
+                    <option value="Andrei Lepagovski">Andrei Lepagovski</option>
+                    <option value="Jeremy Renner">Jeremy Renner</option>
+                    <option value="Cal Kestis">Cal Kestis</option>
+                    <option value="Pierre Sing">Pierre Sing</option>
+                    <option value="Ko Verap">Ko Verap</option>
+                    <option value="Nie Dull">Nie Dull</option>
+                </select>
 
                 <a class="btn btn-primary" href="index.html">Retour</a>
 
