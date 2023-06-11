@@ -1,7 +1,7 @@
 body {
     background-color: black;
     font-family: verdana;
-    background-image: "assets/images/sign.webp";
+    background-image: url('assets/images/sign.webp');
 }
 
 h1 {
