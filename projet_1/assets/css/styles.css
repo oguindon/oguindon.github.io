@@ -1,6 +1,7 @@
 body {
     background-color: black;
     font-family: verdana;
+    background-image : 'assets/images/sign.webp';
 }
 
 h1 {
@@ -23,7 +24,6 @@ font-size: 20px;
 .wrap {
     width: 100%;
     overflow: auto;
-    background-image: 'assets/images/sign.webp';
 }
 
 .floatleft {
