@@ -23,7 +23,7 @@ font-size: 20px;
 .wrap {
     width: 100%;
     overflow: auto;
-    background-image: url('assets/images/sign.webp');
+    background-image: 'assets/images/sign.webp';
 }
 
 .floatleft {
