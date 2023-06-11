@@ -1,5 +1,7 @@
 body {
     background-color: black;
+    font-family: verdana;
+    
 }
 
 h1 {
@@ -16,4 +18,23 @@ font-size: 20px;
     background-color: green;
     text-align: center;
     color: black;
+}
+
+.wrap {
+    width: 100%;
+    overflow: auto;
+}
+
+.floatleft {
+    float:left; 
+    width: 50%;
+    background-color: #ff0000;
+    height: 400px;
+}
+
+.floatright {
+    float: right;
+    width: 50%;
+    background-color: #00ff00;
+    height: 400px;
 }
