@@ -53,3 +53,10 @@ font-size: 20px;
     height: 800px;
     font-family: verdana;
 }
+
+.stackcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
