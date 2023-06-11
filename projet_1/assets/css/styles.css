@@ -38,6 +38,7 @@ font-size: 20px;
     width: 25%;
     height: 800px;
     font-family: verdana;
+    flex-direction: column;
 }
 
 .floatright {
@@ -52,6 +53,7 @@ font-size: 20px;
     width: 75%;
     height: 800px;
     font-family: verdana;
+    flex-direction: column;
 }
 
 .titlecontainer {
@@ -68,6 +70,7 @@ font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .service {
