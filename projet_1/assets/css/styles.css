@@ -34,7 +34,7 @@ font-size: 20px;
     align-items: center;
     justify-content: center;
     float:left; 
-    width: 50%;
+    width: 25%;
     height: 800px;
     font-family: verdana;
 }
@@ -48,7 +48,7 @@ font-size: 20px;
     align-items: center;
     justify-content: center;
     float: right;
-    width: 50%;
+    width: 75%;
     height: 800px;
     font-family: verdana;
 }
