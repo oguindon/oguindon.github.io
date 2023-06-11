@@ -37,6 +37,7 @@ font-size: 20px;
     float:left; 
     width: 50%;
     height: 800px;
+    font-family: verdana;
 }
 
 .floatright {
@@ -50,4 +51,5 @@ font-size: 20px;
     float: right;
     width: 50%;
     height: 800px;
+    font-family: verdana;
 }
