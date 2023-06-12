@@ -79,7 +79,6 @@ font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 .service {
@@ -94,6 +93,7 @@ font-size: 20px;
     height: 1200px;
     font-family: verdana;
     float:left;
+    flex-direction: column;
 }
 
 .notreequipe {
@@ -108,4 +108,5 @@ font-size: 20px;
     height: 800px;
     font-family: verdana;
     float:left;
+    flex-direction: column;
 }
