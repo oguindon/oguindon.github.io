@@ -58,7 +58,7 @@ p {
     justify-content: center;
     float: right;
     width: 55%;
-    height: 400px;
+    height: 600px;
     font-family: verdana;
     flex-direction: column;
 }
