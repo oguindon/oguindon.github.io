@@ -31,6 +31,7 @@ font-size: 20px;
 .wrap {
     width: 100%;
     overflow: auto;
+    flex-direction: row;
 }
 
 .floatleft {
@@ -42,7 +43,7 @@ font-size: 20px;
     align-items: center;
     justify-content: center;
     float:left; 
-    width: 35%;
+    width: 45%;
     height: 800px;
     font-family: verdana;
     flex-direction: column;
@@ -57,7 +58,7 @@ font-size: 20px;
     align-items: center;
     justify-content: center;
     float: right;
-    width: 65%;
+    width: 55%;
     height: 800px;
     font-family: verdana;
     flex-direction: column;
@@ -91,4 +92,5 @@ font-size: 20px;
     width: 25%;
     height: 800px;
     font-family: verdana;
+    float:left;
 }
