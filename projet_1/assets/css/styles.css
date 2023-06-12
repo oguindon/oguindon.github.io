@@ -31,6 +31,7 @@ font-size: 20px;
 .wrap {
     width: 100%;
     overflow: auto;
+    display: flex;
     flex-direction: row;
 }
 
@@ -82,6 +83,20 @@ font-size: 20px;
 }
 
 .service {
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 25%;
+    height: 1200px;
+    font-family: verdana;
+    float:left;
+}
+
+.notreequipe {
     text-align: center;
     font-size: 30px;
     color: white;
