@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/projet2_etape3/static/css/main.620c00bd.css",
+    "main.js": "/projet2_etape3/static/js/main.b14abd97.js",
+    "static/js/787.d8bebc35.chunk.js": "/projet2_etape3/static/js/787.d8bebc35.chunk.js",
+    "static/media/stackobooks.png": "/projet2_etape3/static/media/stackobooks.fed77809cf7b3d976495.png",
+    "static/media/help.png": "/projet2_etape3/static/media/help.cb11987cc7ebac2fa135.png",
+    "static/media/book_icon.jpg": "/projet2_etape3/static/media/book_icon.a602c563d6c2e9b85141.jpg",
+    "static/media/logo.png": "/projet2_etape3/static/media/logo.0924dd975e3192f28a68.png",
+    "index.html": "/projet2_etape3/index.html",
+    "main.620c00bd.css.map": "/projet2_etape3/static/css/main.620c00bd.css.map",
+    "main.b14abd97.js.map": "/projet2_etape3/static/js/main.b14abd97.js.map",
+    "787.d8bebc35.chunk.js.map": "/projet2_etape3/static/js/787.d8bebc35.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.620c00bd.css",
+    "static/js/main.b14abd97.js"
+  ]
+}
