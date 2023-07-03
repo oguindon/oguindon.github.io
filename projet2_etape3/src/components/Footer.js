@@ -2,12 +2,12 @@ import logo from '../img/logo.png';
 
 const Footer = () => {
     const english_version = [
-        "We're making investments easier for you.",
-        "Website created by "
+        "By a book worm, for book worms",
+        "Created by "
     ]
     const french_version = [
-        "Nous simplifions les investissements pour vous.",
-        "CanTrade est créé par "
+        "Pour les lecteurs passionés",
+        "Créé par "
     ]
 
     var active_language = english_version;

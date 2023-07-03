@@ -23,13 +23,13 @@ const Navbar = () => {
     }
 
     const english_version = [
-        "Home", "Books", "Portfolio", "Browse Stocks", "News", "Learn", "Sign Up", "Log In", "Sign Up for CanTrade", "First Name: ", "Surname: ", "Email: ", "Password: ", "I certify that I have read the Terms and Conditions.",
-        "Close", "Log In to CanTrade", "Sign Out", "Français", "Welcome", "Minimum length of 8",
+        "Home", "Books", "Contact Us", "Browse Stocks", "News", "Learn", "Sign Up", "Log In", "Sign Up", "First Name: ", "Surname: ", "Email: ", "Password: ", "I certify that I have read the Terms and Conditions.",
+        "Close", "Log In", "Sign Out", "Français", "Welcome", "Minimum length of 8",
         ""
     ]
     const french_version = [
-        "Acceuil", "Livres", "Portfolio", "Parcourir les actions", "Actualités", "Apprendre", "S'inscrire", "Se connecter", "S'inscrire pour CanTrade", "Prénom: ", "Nom: ", "Courriel: ", "Mot de passe: ", "Je certifie que j'ai lu les termes et conditions.",
-        "Fermer", "Se connecter à CanTrade", "Se déconnecter", "English", "Bienvenue", "Taille minimale de 8",
+        "Acceuil", "Livres", "Contactez-nous", "Parcourir les actions", "Actualités", "Apprendre", "S'inscrire", "Se connecter", "S'inscrire", "Prénom: ", "Nom: ", "Courriel: ", "Mot de passe: ", "Je certifie que j'ai lu les termes et conditions.",
+        "Fermer", "Se connecter", "Se déconnecter", "English", "Bienvenue", "Taille minimale de 8",
         ""
     ]
 
@@ -103,15 +103,12 @@ const Navbar = () => {
                 <img src={logo} alt="logo"  width="25%"/>
             </a>
             <br /><br />
-            <NavbarBS bg="danger" variant="dark" style={{paddingLeft:"20%", paddingRight:"20%"}}>
+            <NavbarBS bg="dark" variant="dark" style={{paddingLeft:"20%", paddingRight:"20%"}}>
                 <NavbarBS.Collapse>
                     <Nav className="mr-auto">
                         <NavbarBS.Brand href="/"> {active_language[0]} </NavbarBS.Brand>
                         <Nav.Link href="/books"> {active_language[1]}</Nav.Link>
-                        <Nav.Link href="/portfolio"> {active_language[2]} </Nav.Link>
-                        <Nav.Link href="/activity"> {active_language[3] }</Nav.Link>
-                        <Nav.Link href="/news">{active_language[4]}</Nav.Link>
-                        <Nav.Link href="/learn">{active_language[5]}</Nav.Link>
+                        <Nav.Link href="/contactus"> {active_language[2]} </Nav.Link>
                     </Nav>
                     {displayLogIn()}
                     <Button variant="light" onClick={changeLang} style={{marginLeft:"5px", marginRight:"5px"}}>{active_language[17]}</Button>

@@ -9,6 +9,8 @@ import Learn from "./components/Learn.js";
 import News from "./components/News.js";
 import Portfolio from "./components/Portfolio.js";
 import Footer from "./components/Footer.js";
+import DescriptionPage from "./components/DescriptionPage.js";
+import Contact_us from "./components/Contact_us.js";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
           <Route exact path="/activity" element={<Activity/>}/> 
           <Route exact path="/news" element={<News/>}/>
           <Route exact path="/learn" element={<Learn/>}/>
+          <Route exact path="/description" element = {<DescriptionPage/>}/>
+          <Route exact path="/contactus" element = {<Contact_us/>}></Route>
         </Routes>
         <Footer />
       </div>

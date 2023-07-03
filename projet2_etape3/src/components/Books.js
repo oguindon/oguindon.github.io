@@ -37,6 +37,9 @@ function Books({ title, price, type, genre, author, rating}) {
                 <Container className='text-center'>
                     <Button variant="primary">Buy</Button>
                 </Container>
+                <Container className='text-center'>
+                    <a href="/description">View</a>
+                </Container>
             </Card.Body>
         </Card>
     );

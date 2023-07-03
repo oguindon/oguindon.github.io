@@ -110,3 +110,35 @@
   padding-bottom: 30px;
   padding-top: 30px;
 }
+
+.scroll-col {
+  background-color: white;
+  overflow-y: scroll;
+  border-style: solid;
+  align-items: center;
+  height: 100%;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+
+.review-name {
+  background-color: aqua;
+  border-bottom: solid;
+}
+
+.review-text {
+  border-style: none;
+  background-color: white;
+}
+
+.basic-box {
+  border-style: solid;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
