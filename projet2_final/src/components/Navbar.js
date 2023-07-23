@@ -4,6 +4,7 @@ import NavbarBS from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import logo from '../img/logo.png';
 import help from '../img/help.png';
+import cartpng from '../img/cart.png';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
@@ -103,15 +104,19 @@ const Navbar = () => {
                 <img src={logo} alt="logo"  width="25%"/>
             </a>
             <br /><br />
-            <NavbarBS bg="dark" variant="dark" style={{paddingLeft:"20%", paddingRight:"20%"}}>
+            <NavbarBS bg="dark" variant="dark" style={{paddingLeft:"10%", paddingRight:"20%", }}>
                 <NavbarBS.Collapse>
                     <Nav className="mr-auto">
-                        <NavbarBS.Brand href="/"> {active_language[0]} </NavbarBS.Brand>
-                        <Nav.Link href="/books"> {active_language[1]}</Nav.Link>
-                        <Nav.Link href="/contactus"> {active_language[2]} </Nav.Link>
+                        <Nav.Link href="/" style={{marginLeft:"5px", marginRight:"5px", color:"aqua"}}> {active_language[0]} </Nav.Link>
+                        <Nav.Link href="/books" style={{marginLeft:"5px", marginRight:"5px", color:"lightcyan"}}> {active_language[1]}</Nav.Link>
+                        <Nav.Link href="/contactus" style={{marginLeft:"5px", marginRight: "100px", color:"lightcyan"}}> {active_language[2]} </Nav.Link>
                     </Nav>
                     {displayLogIn()}
-                    <Button variant="light" onClick={changeLang} style={{marginLeft:"5px", marginRight:"5px"}}>{active_language[17]}</Button>
+                    <Button variant="dark" onClick={changeLang} style={{marginLeft:"5px", marginRight:"5px"}}>{active_language[17]}</Button>
+                    
+                    <Nav.Link href="/cart" style={{marginLeft:"15px", marginRight:"5px", height: "10%", width:"10%"}}>
+                        <img src={cartpng} alt="shopping cart" width='50%' height='50%'/>
+                    </Nav.Link>
                 </NavbarBS.Collapse>
             </NavbarBS>
 

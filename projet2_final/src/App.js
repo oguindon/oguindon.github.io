@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {useState, useEffect} from "react";
 
 // Component Imports
 import Navbar from "./components/Navbar.js";
@@ -11,22 +12,35 @@ import Portfolio from "./components/Portfolio.js";
 import Footer from "./components/Footer.js";
 import DescriptionPage from "./components/DescriptionPage.js";
 import Contact_us from "./components/Contact_us.js";
+import Cart from "./components/Cart.js"
 
 function App() {
+  const [cart, setCart] = useState();
+
+  const addToCart = (id, version) => {
+    if (version) {
+      setCart(id);
+    } else {
+      window.alert("Please select copy (digital, hardcover or paperback)")
+    }
+  }
+
+
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar/>
         <br/>
         <Routes>
           <Route exact path="/" element={<Home/>}/>
-          <Route exact path="/books" element={<BookPage/>}/>
+          <Route exact path="/books" element={<BookPage addToCart={addToCart}/>}/>
           <Route exact path="/portfolio" element={<Portfolio/>}/>
           <Route exact path="/activity" element={<Activity/>}/> 
           <Route exact path="/news" element={<News/>}/>
           <Route exact path="/learn" element={<Learn/>}/>
           <Route exact path="/description" element = {<DescriptionPage/>}/>
-          <Route exact path="/contactus" element = {<Contact_us/>}></Route>
+          <Route exact path="/contactus" element = {<Contact_us/>}/>
+          <Route exact path="/cart" element = {<Cart/>}/>
         </Routes>
         <Footer />
       </div>

@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/esm/Col';
 import Facets_container from './Facets_container';
 
 
-function BookPage() {
+function BookPage({addToCart}) {
 
   const build_categorical_facet_values = (name) => {
     const values = [...new Set(data.map(item => item[name]))]
@@ -80,7 +80,7 @@ function BookPage() {
         </Col>
         <Col>
           <Container className='d-flex flex-wrap'>
-            {state.shown_books.map(x => <Books {...x} />)}
+            {state.shown_books.map(x => <Books {...x} addToCart={addToCart} />)}
           </Container>
         </Col>
       </Row>
