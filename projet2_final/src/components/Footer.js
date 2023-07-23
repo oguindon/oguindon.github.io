@@ -22,8 +22,8 @@ const Footer = () => {
             <a href="/">
                 <img src={logo} alt="logo" width="15%"/>
             </a>
-            <br />
-            <br />
+            <br/>
+            <br/>
             <p>
                 {active_language[1]}
                 <a href="https://github.com/oguindon">Olivier Guindon</a>

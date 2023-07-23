@@ -8,7 +8,8 @@ export const data = [
         "price": 20.00,
         "hardcover_stock": 5,
         "paperback_stock": 2,
-        "rating": 3
+        "rating": 3,
+        "description": "Bla bla bla"
     },
     {
         "id": 2,
@@ -19,6 +20,7 @@ export const data = [
         "price": 20.00,
         "hardcover_stock": 3,
         "paperback_stock": 7,
-        "rating": 2
+        "rating": 2,
+        "description": "Bla bla bla"
     }
 ]
