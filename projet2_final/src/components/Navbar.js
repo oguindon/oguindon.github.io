@@ -24,14 +24,12 @@ const Navbar = () => {
     }
 
     const english_version = [
-        "Home", "Books", "Contact Us", "Browse Stocks", "News", "Learn", "Sign Up", "Log In", "Sign Up", "First Name: ", "Surname: ", "Email: ", "Password: ", "I certify that I have read the Terms and Conditions.",
-        "Close", "Log In", "Sign Out", "Français", "Welcome", "Minimum length of 8",
-        ""
+        "Home", "Shop for Books", "Contact Us", "Daily Reading", "News", "Learn", "Sign Up", "Log In", "Sign Up", "First Name: ", "Surname: ", "Email: ", "Password: ", "I certify that I have read the Terms and Conditions.",
+        "Close", "Log In", "Sign Out", "Français", "Welcome", "Minimum length of 8", ""
     ]
     const french_version = [
-        "Acceuil", "Livres", "Contactez-nous", "Parcourir les actions", "Actualités", "Apprendre", "S'inscrire", "Se connecter", "S'inscrire", "Prénom: ", "Nom: ", "Courriel: ", "Mot de passe: ", "Je certifie que j'ai lu les termes et conditions.",
-        "Fermer", "Se connecter", "Se déconnecter", "English", "Bienvenue", "Taille minimale de 8",
-        ""
+        "Acceuil", "Acheter des Livres", "Contactez-nous", "Lecture Quotidienne", "Actualités", "Apprendre", "S'inscrire", "Se connecter", "S'inscrire", "Prénom: ", "Nom: ", "Courriel: ", "Mot de passe: ", "Je certifie que j'ai lu les termes et conditions.",
+        "Fermer", "Se connecter", "Se déconnecter", "English", "Bienvenue", "Taille minimale de 8", ""
     ]
 
     var active_language = english_version;
@@ -109,6 +107,7 @@ const Navbar = () => {
                     <Nav className="mr-auto">
                         <Nav.Link href="/" style={{marginLeft:"5px", marginRight:"5px", color:"aqua"}}> {active_language[0]} </Nav.Link>
                         <Nav.Link href="/books" style={{marginLeft:"5px", marginRight:"5px", color:"lightcyan"}}> {active_language[1]}</Nav.Link>
+                        <Nav.Link href="/dailyreading" style={{marginLeft:"5px", marginRight:"5px", color:"lightcyan"}}> {active_language[3]}</Nav.Link>
                         <Nav.Link href="/contactus" style={{marginLeft:"5px", marginRight: "100px", color:"lightcyan"}}> {active_language[2]} </Nav.Link>
                     </Nav>
                     {displayLogIn()}

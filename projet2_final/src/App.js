@@ -13,6 +13,7 @@ import Footer from "./components/Footer.js";
 import DescriptionPage from "./components/DescriptionPage.js";
 import Contact_us from "./components/Contact_us.js";
 import Cart from "./components/Cart.js"
+import DailyReading from "./components/DailyReading.js"
 
 function App() {
   const [cart, setCart] = useState();
@@ -41,6 +42,7 @@ function App() {
           <Route exact path="/description" element = {<DescriptionPage/>}/>
           <Route exact path="/contactus" element = {<Contact_us/>}/>
           <Route exact path="/cart" element = {<Cart/>}/>
+          <Route exact path="/dailyreading" element = {<DailyReading/>}/>
         </Routes>
         <Footer />
       </div>
