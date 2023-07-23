@@ -1,5 +1,3 @@
-
-
 export let review_data = [
     { 
         id: 1,
@@ -32,3 +30,7 @@ export let review_data = [
         ]
     }
 ]
+
+export const addReview = (id, review) => {
+    review_data.find(elem => elem.id == id).reviews.push(review);
+}

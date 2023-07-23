@@ -9,8 +9,9 @@ import { useLocation } from 'react-router-dom';
 function DescriptionPage() {
     const location = useLocation();
     //const elements = review_data.map(x => x);
-    const reviews = review_data.find(elem => elem.id === location.state.id).reviews;
-    console.log(reviews);
+    const temp = review_data.find(elem => elem.id === location.state.id);
+    const id = temp.id
+    const reviews = temp.reviews;
     return(<>
         <Row><h1>{location.state.title}</h1><h4> by {location.state.author}</h4></Row>
         <Row>
@@ -21,7 +22,7 @@ function DescriptionPage() {
                 <div className="scroll-col"><p>{location.state.description}</p></div>
             </Col>
             <Col>
-                <Review_container data={reviews}/>
+                <Review_container data={[reviews, id]}/>
             </Col>
         </Row>
     </>
