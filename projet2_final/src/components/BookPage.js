@@ -74,9 +74,11 @@ function BookPage({addToCart}) {
 
   return (
     <div>
+      <h1>Shop for Books</h1>
+      <br></br>
       <Row>
         <Col className='border-end' md={3}>
-          <Facets_container facets={state.facets} updateCategory={updateCategory} clearAllFacetValues={clearAllFacetValues} />
+          <Facets_container facets={state.facets} updateCategory={updateCategory} clearAllFacetValues={clearAllFacetValues}/>
         </Col>
         <Col>
           <Container className='d-flex flex-wrap'>

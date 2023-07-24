@@ -33,9 +33,9 @@ function Books({ title, price, Type, Genre, author, rating, id, description, har
                 let versionInfo = {}
 
                 versionInfo.key = variants[i].name
-                versionInfo.text = variants[i].name
+                versionInfo.text = variants[i].text
                 versionInfo.value = variants[i].name
-                finalVersionArray.push(variants[i].name, versionInfo)
+                finalVersionArray.push({name: variants[i].name, text: variants.text})
             }
         }
 
@@ -44,7 +44,7 @@ function Books({ title, price, Type, Genre, author, rating, id, description, har
 
     const handleButtonAddCart = e => {
         e.preventDefault()
-        addToCart(id, version)
+        addToCart(id, version, price)
     }
 
     return (

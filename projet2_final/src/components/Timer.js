@@ -1,6 +1,5 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
-import PauseIcon from '../img/pause.png';
 import Row from 'react-bootstrap/esm/Row';
 import Col from 'react-bootstrap/esm/Col';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -64,10 +63,10 @@ const Timer = ({timerEnd}) => {
 
     return (
         <div className="timer">
-            <h3>{getTime(timer)}</h3>
+            <h1>{getTime(timer)}</h1>
             <Row>
             <Col>
-                <button onClick={clicked}><FontAwesomeIcon icon={icon} alt="play/pause button"/></button>
+                <button onClick={clicked} style={{height:"100%", width:"20%"}}><FontAwesomeIcon icon={icon} alt="play/pause button" style={{height:"100%", width:"100%"}} /></button>
             </Col>
             </Row>
         </div>

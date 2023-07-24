@@ -1,13 +1,15 @@
 import logo from '../img/logo.png';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Footer = () => {
     const english_version = [
         "By a book worm, for book worms",
-        "Created by "
+        "Github: "
     ]
     const french_version = [
         "Pour les lecteurs passionés",
-        "Créé par "
+        "Github: "
     ]
 
     var active_language = english_version;
@@ -16,7 +18,7 @@ const Footer = () => {
     }
 
     return (  
-        <div className="footer" style={{textAlign:"center", marginBottom:"3rem", marginTop:"2rem"}}>
+        <div className="footer" style={{textAlign:"center", marginBottom:"3rem", marginTop:"2rem", backgroundColor:"aqua"}}>
             <hr></hr>
             <h4>{active_language[0]}</h4>
             <a href="/">
@@ -24,10 +26,15 @@ const Footer = () => {
             </a>
             <br/>
             <br/>
-            <p>
+            <Row>
+            <Col><p>613-555-5555</p></Col>
+            <Col><p>
                 {active_language[1]}
                 <a href="https://github.com/oguindon">Olivier Guindon</a>
-            </p>
+            </p></Col>
+            
+            <Col><p>courriel@placeholder.ca</p></Col></Row>
+            
         </div>
     );
 }
