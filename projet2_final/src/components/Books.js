@@ -49,7 +49,7 @@ function Books({ title, price, Type, Genre, author, rating, id, description, har
 
     return (
         <Card className='m-2' style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={bookIcon} />
+            <Card.Img variant="top" src={bookIcon} alt={"BookIcon"} />
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <Card.Text>

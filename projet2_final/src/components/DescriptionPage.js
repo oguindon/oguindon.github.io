@@ -16,7 +16,7 @@ function DescriptionPage() {
         <Row><h1>{location.state.title}</h1><h4> by {location.state.author}</h4></Row>
         <Row>
             <Col>
-                <img src={picture} alt="" width="100%"></img>
+                <img src={picture} alt="Book Icon" width="100%"></img>
             </Col>
             <Col>
                 <div className="scroll-col"><p>{location.state.description}</p></div>
